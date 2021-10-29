@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
+        integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mohamed Adel Mohamed Ismail</title>
+</head>
+<body>
+    <header>
+        <!-- start of NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-4 nav__logo text-light" href="#">MoGo</a>
+                <button onclick="hideWelcome()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav__ul" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light " href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">SERVICE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">WORK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <button style="display:none" id='enButton' type="button" onclick="changeLang('en')"
+                                class="lang__btn nav-link bg-transparent  border-0  text-light ">
+                                <p class="m-0 ">EN</p>
+                            </button>
+                            <button id='arButton' type="button" onclick="changeLang('AR')"
+                                class=" lang__btn nav-link bg-transparent  border-0 text-light ">
+                                <p class="m-0 ">ع</p>
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- End of navbar -->
+           <!-- Start of Hero -->
+        <section class="hero">
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="px-4 mt-lg-3 text-center">
+                            <p class="lead mb-1 creative__template">Creative Template</p>
+                            <div class="col-lg-6 mx-auto">
+                                <h1 class=" display-5 fw-bold welcome__mogo text-center ">WELCOME</h1>
+                                <h1 class=" display-5 fw-bold welcome__mogo text-center ">TO MOGO</h1>
+                                <div class="  d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn learn__more text-light border ">Learn
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="px-4 mt-lg-3 text-center">
+                            <p class="lead mb-1 creative__template">Creative Template</p>
+                            <div class="col-lg-6 mx-auto">
+                                <h1 class=" display-5 fw-bold welcome__mogo text-center ">WELCOME</h1>
+                                <h1 class=" display-5 fw-bold welcome__mogo text-center ">TO MOGO</h1>
+                                <div class="  d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn learn__more text-light border ">Learn
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="px-4 mt-lg-3 text-center">
+                            <p class="lead mb-1 creative__template">Creative Template</p>
+                            <div class="col-lg-6 mx-auto">
+                                <h1 class=" display-5 fw-bold welcome__mogo text-center ">WELCOME</h1>
+                                <h1 class=" display-5 fw-bold welcome__mogo text-center ">TO MOGO</h1>
+                                <div class="  d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn learn__more text-light border ">Learn
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Hero -->
+    </header>
+    <!-- Start of about -->
+    <section class="story">
+        <div class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="text-center ">
+                    <h4>What We Do</h4>
+                    <h2 class="my-3 fw-bold">STORY ABOUT US!!</h2>
+                    <p class="mx-5 px-5"> Est voluptatem occaecati adipisci quo quisquam dolorem delectus. Saepe quia
+                        quia
+                        cumque.
+                        Dolores a nobis ea ea mollitia quo suscipit et. Est sint sed dolor excepturi aut quia. A cumque
+                        sed
+                        consectetur occaecati et praesentium eaque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm overlay__container ">
+                        <img class="bd-placeholder-img card-img-top image " src="./assets/img/about1.png" alt="pc">
+                        <div class="card shadow-sm middle">
+                            <p class="overlay__text">SUPER TEAM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm overlay__container ">
+                        <img class="bd-placeholder-img card-img-top image " src="./assets/img/about2" alt="pc">
+                        <div class="card shadow-sm middle">
+                            <p class="overlay__text">CREATIVITY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm overlay__container ">
+                        <img class="bd-placeholder-img card-img-top image " src="./assets/img/about3.png" alt="pc">
+                        <div class="card shadow-sm middle">
+                            <p class="overlay__text">DIGITAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of about -->
+    <!-- Start of statistics -->
+    <section class="stats">
+        <div class="container">
+            <div class="d-flex flex-nowrap text-center">
+                <div class="col stats_card first">
+                    <h1 class="stats__text">42</h1>
+                    <p class="stats__paragraph">WEB DESIGN PROJECT</p>
+                </div>
+                <div class="col stats_card">
+                    <h1 class="stats__text">123</h1>
+
+                    <p class="stats__paragraph">HAPPY CLIENT
+                    </p>
+                </div>
+                <div class="col stats_card">
+                    <h1 class="stats__text">15</h1>
+
+                    <p class="stats__paragraph">AWARD WINNER
+                    </p>
+                </div>
+                <div class="col stats_card">
+                    <h1 class="stats__text">99</h1>
+
+                    <p class="stats__paragraph">CUP OF COFFEE
+                    </p>
+                </div>
+                <div class="col stats_card">
+                    <h1 class="stats__text">24</h1>
+                    <p class="stats__paragraph">MEMBERS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of statistics -->
+
+    <!-- Start of services -->
+    <section class="services ">
+        <div class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="text-center ">
+                    <h4>We Work With</h4>
+                    <h2 class="my-3 fw-bold">AMAZING SERVICES</h2>
+                    <p class="mx-5 px-5"> Est voluptatem occaecati adipisci quo quisquam dolorem delectus. Saepe quia
+                        quia
+                        cumque.
+                        Dolores a nobis ea ea mollitia quo suscipit et. Est sint sed dolor excepturi aut quia. A cumque
+                        sed
+                        consectetur occaecati et praesentium eaque.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-4 " id="hanging-icons">
+            <div class="row g-4  row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start border-bottom">
+                    <div class="fs-4 service__icon flex-shrink-0 me-3">
+                        <i class="bi bi-alarm"></i>
+                    </div>
+                    <div>
+                        <h5>PHOTOGRAPHY</h5>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence
+                            and probably just keep going until we run out of words.</p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start border-bottom">
+                    <div class="fs-4 service__icon flex-shrink-0 me-3">
+                        <i class="bi bi-check-square"></i>
+                    </div>
+                    <div>
+                        <h5>WEB DESIGN</h5>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence
+                            and probably just keep going until we run out of words.</p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start border-bottom">
+                    <div class="fs-4 service__icon flex-shrink-0 me-3">
+                        <i class="bi bi-check-square"></i>
+                    </div>
+                    <div>
+                        <h5>CREATIVITY</h5>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence
+                            and probably just keep going until we run out of words.</p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="fs-4 service__icon flex-shrink-0 me-3">
+                        <i class="bi bi-arrow-down-up"></i>
+                    </div>
+                    <div>
+                        <h5>SEO</h5>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence
+                            and probably just keep going until we run out of words.</p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="fs-4 service__icon flex-shrink-0 me-3">
+                        <i class="bi bi-house-door"></i>
+                    </div>
+                    <div>
+                        <h5>CSS/HTML</h5>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence
+                            and probably just keep going until we run out of words.</p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="fs-4 service__icon flex-shrink-0 me-3">
+                        <i class="bi bi-square"></i>
+                    </div>
+                    <div>
+                        <h5>DIGITAL</h5>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence
+                            and probably just keep going until we run out of words.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of services -->
+
+    <!-- Start of unique -->
+    <section class="unique mb-5">
+        <div class="container">
+            <div class="row unique">
+                <div class="text-center text-dark ">
+                    <h4>For All Devices</h4>
+                    <h2 class="my-3 fw-bold">UNIQUE DESIGN</h2>
+                </div>
+                <img class="unique__tablet" src="./assets/img/unique-tablet.png" alt="tablet">
+                <img class="unique__mobile" src="./assets/img/unique-mobile.png" alt="mobile">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End of unique -->
+
+    <!-- Start of service2  -->
+    <sectopn class="services2">
+        <div class="container">
+            <div class="row py-lg-5">
+                <div class="text-center ">
+                    <h4>Service</h4>
+                    <h2 class="my-3 fw-bold">WHAT WE DO</h2>
+                    <p class="mx-5 px-5"> Est voluptatem occaecati adipisci quo quisquam dolorem delectus. Saepe quia
+                        quia
+                        cumque.
+                        Dolores a nobis ea ea mollitia quo suscipit et. Est sint sed dolor excepturi aut quia. A cumque
+                        sed
+                        consectetur occaecati et praesentium eaque.</p>
+                </div>
+            </div>
+            <div class="row align-items-md-stretch above__quote">
+                <div class="col-md-6">
+                    <div class="  text-white rounded-3">
+                        <img class="bd-placeholder-img card-img-top image " src="./assets/img/services2.png"
+                            alt="person">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-image service__icon"></i> <span class="text-dark ms-1">
+                                        PHOTOGRAPHY</span>
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until
+                                    the collapse
+                                    plugin adds the appropriate classes that we use to style each element. These classes
+                                    control the overall
+                                    appearance, as well as the showing and hiding via CSS transitions. You can modify
+                                    any of
+                                    this with
+                                    custom CSS or overriding our default variables. It's also worth noting that just
+                                    about
+                                    any HTML can go
+                                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-chevron-double-down service__icon"></i> <span
+                                        class="text-dark ms-1">
+                                        CREATIVITY</span>
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These classes control the
+                                    overall
+                                    appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any of this with custom CSS
+                                    or
+                                    overriding our default variables.
+                                    It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition
+                                    does limit overflow.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-record-circle service__icon"></i> <span class="text-dark ms-1">
+                                        WEB DESIGN</span>
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until
+                                    the collapse
+                                    plugin adds the appropriate classes that we use to style each element. These classes
+                                    control the overall
+                                    appearance, as well as the showing and hiding via CSS transitions. You can modify
+                                    any of
+                                    this with
+                                    custom CSS or overriding our default variables. It's also worth noting that just
+                                    about
+                                    any HTML can go
+                                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </sectopn>
+    <section class="service2__quote">
+        <div class="container">
+            <div class="wrapper">
+
+                <div class="gap-4 w-100 d-flex justify-content-center align-items-center flex-wrap flex-md-nowrap">
+                    <div class="quote__icon__holder ">
+                        <i class="bi bi-chat-left-quote quote__icon"></i>
+                    </div>
+                    <div class="  p-0 ">
+                        <blockquote class="blockquote mb-0">
+                            <p class="text-secondary">"Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                                Quod aut
+                                quia
+                                perferendis ipsam architecto.
+                                Vitae, et, magnam impedit aspernatur corpor Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit."</p>
+                            <footer class="blockquote-footer text-dark"><cite title="Source title ">Jon Doe</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of service2  -->
+
+
+    <!-- Start of team -->
+    <section class="story">
+        <div class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="text-center ">
+                    <h4>Who We Are</h4>
+                    <h2 class="my-3 fw-bold">MEET OUR TEAM</h2>
+                    <p class="mx-5 px-5"> Est voluptatem occaecati adipisci quo quisquam dolorem delectus. Saepe
+                        quia
+                        quia
+                        cumque.
+                        Dolores a nobis ea ea mollitia quo suscipit et. Est sint sed dolor excepturi aut quia. A
+                        cumque
+                        sed
+                        consectetur occaecati et praesentium eaque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm overlay__container ">
+                        <img class="bd-placeholder-img card-img-top image " src="./assets/img/team1.jpg" alt="person">
+                        <div class="card shadow-sm middle">
+                            <p class="overlay__text">SUPER TEAM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm overlay__container ">
+                        <img class="bd-placeholder-img card-img-top image " src="./assets/img/team2.jpg" alt="person">
+                        <div class="card shadow-sm middle">
+                            <p class="overlay__text">CREATIVITY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm overlay__container ">
+                        <img class="bd-placeholder-img card-img-top image " src="./assets/img/team3.jpg" alt="person">
+                        <div class="card shadow-sm middle">
+                            <p class="overlay__text">DIGITAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- End of team -->
+    <!-- Start logo of brands -->
+    <section class="brands">
+        <div class="container">
+            <div class="row text-center">
+                <figure class=" col-12 col-sm-6 col-md-4 col-lg-2">
+                    <img class="brand__logo" src="./assets/img/logo1.png" alt="brand">
+                </figure>
+                <figure class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <img class="brand__logo" src="./assets/img/logo2.png" alt="brand">
+                </figure>
+                <figure class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <img class="brand__logo" src="./assets/img/logo3.png" alt="brand">
+                </figure>
+                <figure class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <img class="brand__logo" src="./assets/img/logo4.png" alt="brand">
+                </figure>
+                <figure class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <img class="brand__logo" src="./assets/img/logo5.png" alt="brand">
+                </figure>
+                <figure class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <img class="brand__logo" src="./assets/img/logo6.png" alt="brand">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- End logo of brands -->
+    <!-- Start of  work -->
+    <section class="work mt-3">
+        <div class="container">
+            <div class="row py-lg-5">
+                <div class="text-center ">
+                    <h4>What we do</h4>
+                    <h2 class="my-3 fw-bold">SOME OF OUR WORK</h2>
+                    <p class="mx-5 px-5"> Est voluptatem occaecati adipisci quo quisquam dolorem delectus. Saepe
+                        quia
+                        quia
+                        cumque.
+                        Dolores a nobis ea ea mollitia quo suscipit et. Est sint sed dolor excepturi aut quia. A
+                        cumque
+                        sed
+                        consectetur occaecati et praesentium eaque.</p>
+                </div>
+            </div>
+            <div class="d-flex gap-0 flex-wrap">
+                <div class="col-md-3  ">
+                    <div class="col gap-0 ">
+                        <div class="col-md-12 ">
+                            <div class="card shadow-sm overlay__container border-0">
+                                <img class="bd-placeholder-img card-img-top image " src="./assets/img/Layer1.png"
+                                    alt="person">
+                                <div class="card shadow-sm middle">
+                                    <p class="overlay__text">CREATIVITY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="card shadow-sm overlay__container border-0">
+                                <img class="bd-placeholder-img card-img-top image " src="./assets/img/Layer2.png"
+                                    alt="person">
+                                <div class="card shadow-sm middle">
+                                    <p class="overlay__text">CREATIVITY</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="col gap-0 ">
+                        <div class="col-md-12 ">
+                            <div class="card shadow-sm overlay__container border-0">
+                                <img class="bd-placeholder-img card-img-top image " src="./assets/img/Layer3.png"
+                                    alt="person">
+                                <div class="card shadow-sm middle">
+                                    <p class="overlay__text">CREATIVITY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="card shadow-sm overlay__container border-0 ">
+                                <img class="bd-placeholder-img card-img-top image " src="./assets/img/Layer4.png"
+                                    alt="person">
+                                <div class="card shadow-sm middle">
+                                    <p class="overlay__text">CREATIVITY</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card shadow-sm overlay__container border-0">
+                        <img class="bd-placeholder-img card-img-top image h-100 " src="./assets/img/Layer5.png"
+                            alt="person">
+                        <div class="card shadow-sm middle">
+                            <p class="overlay__text">CREATIVITY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="col gap-0 ">
+                        <div class="col-md-12 ">
+                            <div class="card shadow-sm overlay__container border-0">
+                                <img class="bd-placeholder-img card-img-top image " src="./assets/img/Layer6.png"
+                                    alt="person">
+                                <div class="card shadow-sm middle">
+                                    <p class="overlay__text">CREATIVITY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="card shadow-sm overlay__container border-0 ">
+                                <img class="bd-placeholder-img card-img-top image " src="./assets/img/Layer7.png"
+                                    alt="person">
+                                <div class="card shadow-sm middle">
+                                    <p class="overlay__text">CREATIVITY</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End of work -->
+
+
+    <!-- service2 -->
+    <section class="service2__quote bg-white">
+        <div class="container">
+            <div class="wrapper">
+
+                <div class=" gap-4 w-100 d-flex justify-content-center align-items-center flex-wrap flex-md-nowrap">
+                    <div>
+                        <img class="brand__logo " src="./assets/img/joshua.png" alt="Joshua">
+
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p class="text-secondary">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aut
+                                quia
+                                perferendis ipsam architecto.
+                                Vitae, magnam impedit aspernatur corpor Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                amet consectetur adipis Vitae, magnam impedit aVitae, magnam impedit aspernatur corpor
+                                Lorem
+                                "</p>
+                            <footer class="blockquote-footer text-dark"><cite title="Source title ">Joshua Earle</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h3 class="text-secondary font-weight-bold">MoGo</h3>
+                    <p class="pr-5 text-secondary text-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam ac ante mollis quam tristique convallis dipiscing Nullam ac ante mollis quam tristique
+                        convallis elit. </p>
+                    <p>Follow us <a href="#"><i class="bi bi-facebook"></i></a> <a href="#"><i
+                                class="bi bi-twitter"></i></a> <a href="#"><i class="bi bi-instagram"></i></a> </p>
+                    <form class="w-75">
+                        <div class="input-group input-group-lg">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary subscribe" type="submit">Subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-xs-12  links">
+                    <h4 class="mt-lg-0 mt-sm-3">BLOGS</h4>
+                    <ul class="m-0 p-0  justify-content-sm-center">
+                        <li>
+                            <img class="mb-3" src="./assets/img/blog1.png" alt="blog">
+                        </li>
+                        <li>
+                            <img class="mb-3" src="./assets/img/blog2.png" alt="blog">
+                        </li>
+                        <li>
+                            <img class="mb-3" src="./assets/img/blog3.png" alt="blog">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">INSTAGRAM</h4>
+                    <div class="row gap-0">
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst1.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst2.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst3.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst4.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst5.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst6.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst7.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst8.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="mb-2" src="./assets/img/inst9.png" alt="blog">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col copyright">
+                        <p class="text-center"><small class="text-dark-50">© 2021. ITI Project Mohamed Adel mohamed
+                                Ismail
+                            </small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="./script/scipt.js"></script>
+</body>
+
+</html>

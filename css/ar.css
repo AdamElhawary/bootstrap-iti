@@ -1,0 +1,275 @@
+header {
+  background-image: url("../assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  height: 50vw;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&display=swap");
+body {
+  font-family: "Kaushan Script";
+}
+
+.hero > div {
+  height: 40vw;
+  width: 100%;
+  position: absolute;
+  padding-top: 1vw;
+}
+
+.nav__ul {
+  margin-right: 0;
+}
+
+.nav__logo {
+  margin-right: 20vw;
+}
+
+.creative__template {
+  font-size: 3vw;
+}
+
+.welcome__mogo {
+  font-size: 5vw;
+}
+
+.learn__more {
+  font-size: 2vw;
+  margin: 0 auto;
+}
+
+.slider__indicators {
+  bottom: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__ul,
+  .nav__logo {
+    margin-right: 0vw;
+  }
+}
+
+/* about */
+
+h2::after {
+  content: "";
+  border-bottom: 2px solid rgb(245, 89, 89);
+  display: block;
+  width: 10%;
+  margin: 1em auto;
+}
+
+/* overlay */
+
+.overlay__container {
+  position: relative;
+  border-color: white;
+  background-color: rgba(149, 225, 211, 1);
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay__container:hover .image {
+  opacity: 1;
+  cursor: pointer;
+  transform: translate(10px, -10px);
+}
+
+.overlay__container:hover .middle {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+  border: none;
+  transform: translate(10px, -10px);
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9)
+  );
+}
+
+.overlay__text {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* unique */
+
+.row.unique {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.unique {
+  background-image: url("../assets/img/backgroundIMG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  min-height: 42vw;
+}
+
+.unique__tablet {
+  width: 24vw;
+  height: 28vw;
+}
+
+.unique__mobile {
+  width: 12vw;
+  height: 22vw;
+  margin-bottom: -5%;
+  margin-right: -7%;
+}
+
+/* statistics */
+
+.stats {
+  background-color: rgba(149, 225, 211, 1);
+  color: white;
+}
+
+.stats_card {
+  border-color: white;
+  border-style: solid;
+  border-width: 0px 0px 0px 0.5px;
+  padding: 2vw 0 2vw 0;
+}
+
+.stats_card.first {
+  border-style: solid;
+  border-width: 0px 0.5px 0px 0.5px;
+}
+
+.stats__text {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.stats__paragraph {
+  font-size: 1vw;
+}
+
+/* brand logo */
+
+.brands {
+  background-color: rgb(232, 232, 232);
+}
+
+.brand__logo:hover {
+  transform: scale(1.3);
+}
+
+.brand__logo {
+  transition: all 0.2s ease-in-out;
+}
+
+/* service */
+
+.above__quote {
+  margin-bottom: 5%;
+}
+
+.service__icon {
+  color: rgb(149, 225, 211);
+}
+
+/* services2 */
+
+.blockquote-footer::before {
+  color: red;
+}
+
+.service2__quote {
+  background-color: rgb(241, 241, 241);
+  padding: 5%;
+}
+
+.service2__card {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(241, 241, 241);
+}
+
+.quote__icon {
+  color: rgb(149, 225, 211);
+  font-size: 7rem;
+}
+
+.wrapper {
+  margin: 0 6rem 0 6rem;
+}
+
+/* footer */
+
+.footer {
+  background: rgb(231, 231, 231);
+  color: black;
+}
+
+.footer .links ul {
+  list-style-type: none;
+}
+
+.footer .links li a {
+  color: black;
+  transition: color 0.2s;
+}
+
+.footer .links li a:hover {
+  text-decoration: none;
+  color: #4180cb;
+}
+
+.footer .about-company i {
+  font-size: 25px;
+}
+
+.footer .about-company a {
+  color: black;
+  transition: color 0.2s;
+}
+
+.footer .about-company a:hover {
+  color: #4180cb;
+}
+
+.footer .location i {
+  font-size: 18px;
+}
+
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.subscribe {
+  height: 100%;
+  background-color: rgb(149, 225, 211);
+  border: none;
+}
+
+.copyright::before {
+  content: "";
+  border-bottom: 2px solid rgb(87, 86, 86);
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+}
